@@ -6,3 +6,8 @@
 {%  trans ""%}
 
 {%  endblock %}
+
+{% load static %}
+{% block favicon %}
+        <link rel="shortcut icon" href="{% static 'oscar/logo.jpg' %}" />
+{% endblock %}
