@@ -27,7 +27,7 @@ SECRET_KEY = ')07&3f#kw2rtv9d6yqu!yxc#aim8s7lf@s@gdtr!$!6ro6mz4w'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['bananagorilla.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','bananagorilla.herokuapp.com']
 
 
 # Application definition
@@ -186,7 +186,7 @@ OSCAR_CURRENCY_FORMAT = '¤#,##0'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'static')
