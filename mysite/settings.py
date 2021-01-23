@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')07&3f#kw2rtv9d6yqu!yxc#aim8s7lf@s@gdtr!$!6ro6mz4w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['bananagorilla.herokuapp.com']
@@ -128,11 +128,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'name',
-        'USER': 'name',
-        'PASSWORD': '',
-        'HOST': 'host',
-        'PORT': '',
+        'NAME': 'd6hqg82a94hebl',
+        'USER': 'ppyokknjvmnzdx',
+        'PASSWORD': '9f9fd25d01cb8e4b1e6e00bc378b10b3cc71dfd4da3f29d0a276bb1b6eb4aab6',
+        'HOST': 'ec2-54-225-18-166.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
