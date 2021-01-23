@@ -26,14 +26,6 @@ SECRET_KEY = ')07&3f#kw2rtv9d6yqu!yxc#aim8s7lf@s@gdtr!$!6ro6mz4w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
-
-if not DEBUG:
-    import django_heroku
-    django_heroku.settings(locals())
 
 ALLOWED_HOSTS = ['*']
 
@@ -207,3 +199,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 PAYPAL_API_USERNAME = 'sb-jmajs4776348_api1.business.example.com'
 PAYPAL_API_PASSWORD = 'TPJWJJVWAB4SN69Q'
 PAYPAL_API_SIGNATURE = 'AYkxioWBrKwCt6wLJrw2HSJcBZrtAegm0VAxQQRUj4M0qffaoHoolYVp'
+try:
+    from .local_settings import *
+except ImportError:
+    pass
+
+if not DEBUG:
+    import django_heroku
+    django_heroku.settings(locals())
