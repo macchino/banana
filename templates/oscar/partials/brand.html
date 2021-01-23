@@ -4,12 +4,18 @@
 
 {% block brand_title %}
 
-<!-- ＃ index.html 一覧を作成する画面で画像を表示する -->
-<!-- {% load cloudinary %}
+{% load cloudinary %}
+ <!--cloudinary -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
 
-{% for post in object_list %}
-　 {% cloudinary post.image.https://res.cloudinary.com/dn76rhzjx/image/upload/v1611377531/banana_xhbjet.jpg width=300 height=150 %}
-{% endfor %} -->
+  <style type="text/css">
+ .blog-bg img {
+ max-width: 100%;
+ height: auto;
+ width :auto;
+ }
+  </style>
+
 
 {% trans "Banana Gorilla Shirts" %}
 
