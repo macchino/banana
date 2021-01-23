@@ -27,7 +27,7 @@ SECRET_KEY = ')07&3f#kw2rtv9d6yqu!yxc#aim8s7lf@s@gdtr!$!6ro6mz4w'
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['bananagorilla.herokuapp.com']
 
 
 # Application definition
