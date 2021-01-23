@@ -4,6 +4,13 @@
 
 {% block brand_title %}
 
+＃ index.html 一覧を作成する画面で画像を表示する
+{% load cloudinary %}
+
+{% for post in object_list %}
+　 {% cloudinary post.image.https://res.cloudinary.com/dn76rhzjx/image/upload/v1611377531/banana_xhbjet.jpg width=300 height=150 %}
+{% endfor %}
+
 {% trans "Banana Gorilla Shirts" %}
 
 {% endblock %}

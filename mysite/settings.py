@@ -81,6 +81,8 @@ INSTALLED_APPS = [
     'sorl.thumbnail',
     'django_tables2',
     'paypal',
+    'cloudinary', 
+    'cloudinary_storage',
 ]
 
 SITE_ID = 1
@@ -192,6 +194,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'static')
 ]
+# cloudinary setting
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dn76rhzjx',
+    'API_KEY': '995888611364255',
+    'API_SECRET': 'hWChrX7v4D-EazDYkEaGLmvU5u4'
+}
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
