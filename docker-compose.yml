@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    container_name: Django-Banana
+    build: .
+    volumes:
+      -  C:\Work\Django-Work\banana:/code
+    tty: true
+    ports:
+      - 127.0.0.1:8000:8000
