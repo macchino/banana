@@ -13,5 +13,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('checkout/paypal/', include('paypal.express.urls')),
     path('', include(apps.get_app_config('oscar').urls[0])),
-
+    path("", apps.get_app_config("oscar_promotions").urls),
+    path("dashboard/promotions/", apps.get_app_config("oscar_promotions_dashboard").urls),
 ]

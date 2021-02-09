@@ -1,3 +1,4 @@
+{% extends 'oscar/partials/nav_primary.html' %}
 {% load currency_filters %}
 {% load category_tags %}
 {% load i18n %}
@@ -66,6 +67,11 @@
                         </ul>
                     </li>
                     {% block nav_extra %}
+                        <li style=" 。。。 ">
+                            <a href="{% url 'partner:about-us' %}">
+                                {% trans "About Us" %}
+                            </a>
+                        </li>
                     {% endblock %}
                 </ul>
             {% endblock %}

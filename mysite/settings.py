@@ -73,7 +73,8 @@ INSTALLED_APPS = [
     'oscar.apps.dashboard.vouchers.apps.VouchersDashboardConfig',
     'oscar.apps.dashboard.communications.apps.CommunicationsDashboardConfig',
     'oscar.apps.dashboard.shipping.apps.ShippingDashboardConfig',
-
+    'oscar_promotions.apps.PromotionsConfig',
+    'oscar_promotions.dashboard.apps.PromotionsDashboardConfig',
     # 3rd-party apps that oscar depends on
     'widget_tweaks',
     'haystack',
@@ -117,6 +118,7 @@ TEMPLATES = [
                 'oscar.apps.checkout.context_processors.checkout',
                 'oscar.apps.communication.notifications.context_processors.notifications',
                 'oscar.core.context_processors.metadata',
+                'oscar_promotions.context_processors.promotions',
             ],
         },
     },
