@@ -3963,7 +3963,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  border-color: #f8fc14;
 }
 .navbar-inverse .navbar-link {
   color: #9d9d9d;
@@ -6131,6 +6131,7 @@ td .btn-toolbar {
 .navbar .nav > li span {
   display: block;
   padding: 14px;
+  color: black;
 }
 .dropdown-menu {
   font-size: 12px;
@@ -6143,11 +6144,11 @@ td .btn-toolbar {
   padding-left: 20px;
   padding-right: 20px;
   min-height: 50px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6666;
   background-image: -webkit-linear-gradient(top, #373737 0%, #242424 100%);
   background-image: -o-linear-gradient(top, #373737 0%, #242424 100%);
-  background-image: linear-gradient(to bottom, #373737 0%, #242424 100%);
+  background-image: linear-gradient(to bottom, #a4d911 0%, #cbf709 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff373737', endColorstr='#ff242424', GradientType=0);
   background-repeat: repeat-x;
   border: none;
@@ -6167,7 +6168,7 @@ td .btn-toolbar {
   top: 5px;
 }
 .navbar-accounts .container-fluid .navbar-nav > li > a {
-  color: #c1c1c1;
+  color: black;
 }
 .navbar-primary {
   min-height: 44px;
@@ -6175,7 +6176,7 @@ td .btn-toolbar {
 .navbar-primary .container-fluid {
   background-image: -webkit-linear-gradient(top, #353535 0%, #373737 100%);
   background-image: -o-linear-gradient(top, #353535 0%, #373737 100%);
-  background-image: linear-gradient(to bottom, #353535 0%, #373737 100%);
+  background-image: linear-gradient(to bottom, #353535 0%, #fa9108 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff353535', endColorstr='#ff373737', GradientType=0);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
