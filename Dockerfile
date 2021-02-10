@@ -6,7 +6,8 @@ RUN mkdir /code
 
 WORKDIR /code
 #
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip \
+    && apt update
 
 RUN pip install django-oscar==2.1 \
     && pip install django-oscar-paypal \
@@ -20,7 +21,8 @@ RUN pip install django-oscar==2.1 \
     && pip install pycountry \
     && pip install pysolr \
     && pip install sorl-thumbnail \
-    && pip install whitenoise
+    && pip install whitenoise \
+    && apt install -y python3-pip python3-dev libpq-dev postgresql postgresql-contrib
 
 EXPOSE 8000
 
