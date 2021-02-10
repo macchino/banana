@@ -171,6 +171,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+OSCAR_DASHBOARD_NAVIGATION[5]['children'] += [
+    {
+        'label': 'Content blocks',
+        'url_name': 'oscar_promotions_dashboard:promotion-list',
+    },
+    {
+        'label': 'Content blocks by page',
+        'url_name': 'oscar_promotions_dashboard:promotion-list-by-page',
+    },
+]
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Internationalization

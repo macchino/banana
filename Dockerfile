@@ -17,6 +17,7 @@ RUN pip install django-oscar==2.1 \
     && pip install django-heroku \
     && pip install gunicorn \
     && pip install install \
+    && pip install pycountry \
     && pip install pysolr \
     && pip install sorl-thumbnail \
     && pip install whitenoise
